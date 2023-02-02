@@ -1,0 +1,39 @@
+---
+	import Header from "../components/layouts/Header.astro";
+	import Main from "../components/layouts/Main.astro";
+	
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<Header></Header>
+		<Main></Main>
+	</body>
+</html>
+
+
+<style>
+	body{
+		width: 99.5%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-image: url("https://static.vecteezy.com/system/resources/previews/007/323/517/non_2x/modern-luxury-banner-template-design-black-arrow-triangles-and-golden-glitter-3d-gold-stripes-line-light-sparking-on-dark-background-vector.jpg");
+		background-size: cover;
+	}
+
+	a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+</style>
